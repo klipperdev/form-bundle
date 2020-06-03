@@ -21,9 +21,6 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class KlipperFormBundle extends Bundle
 {
-    /**
-     * {@inheritdoc}
-     */
     public function build(ContainerBuilder $container): void
     {
         $container->addCompilerPass(new FormTypeDoctrineAwarePass(), PassConfig::TYPE_BEFORE_OPTIMIZATION, 1);

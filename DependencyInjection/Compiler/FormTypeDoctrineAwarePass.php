@@ -28,9 +28,6 @@ class FormTypeDoctrineAwarePass implements CompilerPassInterface
 {
     use PriorityTaggedServiceTrait;
 
-    /**
-     * {@inheritdoc}
-     */
     public function process(ContainerBuilder $container): void
     {
         $resolverId = 'klipper_form.doctrine.target_object_resolver';
