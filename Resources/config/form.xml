@@ -17,14 +17,22 @@
         </service>
 
         <service id="klipper_form.type_extension.symfony_entity_resolve_target"
-                 class="Klipper\Component\Form\Doctrine\Extension\SymfonyEntityResolveTargetTypeExtension"
-                 public="true">
+                 class="Klipper\Component\Form\Doctrine\Extension\SymfonyEntityResolveTargetTypeExtension">
             <tag name="form.type_extension" />
         </service>
 
         <service id="klipper_form.type_extension.klipper_entity_resolve_target"
-                 class="Klipper\Component\Form\Doctrine\Extension\KlipperEntityResolveTargetTypeExtension"
-                 public="true">
+                 class="Klipper\Component\Form\Doctrine\Extension\KlipperEntityResolveTargetTypeExtension">
+            <tag name="form.type_extension" />
+        </service>
+
+        <service id="klipper_form.type_extension.symfony_entity_dynamic_choice_loader"
+                 class="Klipper\Component\Form\Doctrine\Extension\SymfonyEntityDynamicChoiceLoaderTypeExtension">
+            <tag name="form.type_extension" />
+        </service>
+
+        <service id="klipper_form.type_extension.klipper_entity_dynamic_choice_loader"
+                 class="Klipper\Component\Form\Doctrine\Extension\KlipperEntityDynamicChoiceLoaderTypeExtension">
             <tag name="form.type_extension" />
         </service>
     </services>
