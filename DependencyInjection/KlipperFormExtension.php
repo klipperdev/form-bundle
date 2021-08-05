@@ -31,6 +31,7 @@ class KlipperFormExtension extends Extension
     {
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('form.xml');
+        $loader->load('form_helper.xml');
 
         if (interface_exists(EntityManagerInterface::class)) {
             $loader->load('form_doctrine.xml');
